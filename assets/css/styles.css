@@ -21,3 +21,13 @@ body::before {
     left: 0;
     right: 0;
 }
+
+/* Estilização da logo */
+.logo img {
+    height: 45px;
+    width: 167px;
+}
+
+.header {
+    
+}
