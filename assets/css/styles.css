@@ -29,7 +29,7 @@ body::before {
     width: 167px;
 }
 
-.header {
+.header-container {
     padding: 20px 50px;
     position: relative;
     z-index: 10;
@@ -47,6 +47,8 @@ body::before {
     border-radius: 10px;
     box-sizing: border-box;
     transform: translate(-50%);
+    max-width: 100%; /* ou width: 100% */
+    overflow: hidden; 
 }
 
 .login-body h2 {
@@ -66,4 +68,179 @@ body::before {
     padding-left: 15px;
     box-sizing: border-box;
     outline: none;
+}
+
+.login-body input:hover {
+    background-color: #444;
+}
+
+.input-box {
+    margin-bottom: 25px;
+}
+
+/* Estilização do botão */
+.login-body button {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.login-body button:hover {
+    background-color: #fc1722;
+    cursor: pointer;
+}
+
+/* Estilização do footer */
+.support {
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.support input {
+    width: 15px;
+    height: 15px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember span {
+    margin-right: 5px;
+    height: 25px
+}
+
+.help a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
+
+.login-facebook {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #737373;
+}
+
+.login-facebook span {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.login-facebook span a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.sign-up {
+    color: #737373;
+    font-size: 16px;
+}
+
+.sign-up a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    color: #737373;
+    font-size: 13px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.terms a {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+
+/* Telas menores que 768px */
+@media (max-width: 768px) {
+    .login-body {
+        max-width: 300px;
+    }
+
+    .input-box {
+        margin-bottom: 10px;
+    }
+
+    .submit {
+        padding: 10px 15px;
+    }
+
+    .support {
+        margin-top: 10px;
+    }
+
+    .login-footer {
+        padding: 15px;
+    }
+}
+
+/* Telas menores que 480px */
+@media (max-width: 480px) {
+    .login-body {
+        max-width: 250px;
+    }
+
+    .input-box {
+        margin-bottom: 5px;
+    }
+
+    .submit {
+        padding: 10px 10px;
+    }
+
+    .support {
+        margin-top: 5px;
+    }
+
+    .login-footer {
+        padding: 10px;
+    }
+}
+
+/* Telas menores que 320px */
+@media (max-width: 320px) {
+    .login-body {
+        max-width: 200px;
+    }
+
+    .input-box {
+        margin-bottom: 2px;
+    }
+
+    .submit {
+        padding: 10px 5px;
+    }
+
+    .support {
+        margin-top: 2px;
+    }
+
+    .login-footer {
+        padding: 5px;
+    }
 }
